@@ -17,3 +17,31 @@ DMZ는 2022년 7월부터 8월까지 개발된 프로젝트입니다.<br>
   2. 챗봇은 입력된 문장을 이해하기 위해 언어모델을 활용합니다.<br>
   3. 챗봇은 신조어의 의미를 파악하고, 가능한 번역 결과를 생성합니다.<br>
   4. 생성된 번역 결과를 사용자에게 제공하여 사용자가 해당 신조어의 의미를 이해할 수 있도록 도움을 줍니다.<br>
+# 4. GPT API 대 DMZ 챗봇 비교
+
+GPT API: GPT 언어모델은 강력한 자연어 이해 능력을 가지고 있지만, 사용자가 특정한 문맥을 설명하지 않을 경우에도 제한된 지식으로 답변할 수 있습니다.<br>
+DMZ 챗봇: DMZ 팀의 챗봇은 신조어 번역에 특화된 기능을 가지고 있으며, 사용자가 신조어와 관련된 문맥을 제공할 경우 보다 정확한 번역 결과를 제공할 수 있습니다.
+
+# 4. INSTALL
+gpt api
+```
+!git clone https://github.com/xoos0420/dmz
+%cd 0808_BERT_GPT
+!pip install -r requirements.txt
+
+%cd dmz_back
+uvicorn app:app --reload
+```
+masked
+```
+!git clone https://github.com/xoos0420/dmz
+%cd 0808_masked
+!pip install -r requirements.txt
+
+%cd dmz_back
+uvicorn app:app --port 5000 --reload
+```
+# 5. 작동
+<div align="center">
+  <img width="40%" height="20%" src="https://github.com/xoos0420/dmz/assets/131944211/5fa46d4d-6326-4a6a-8a89-7d9a0b3a0b29"/>
+</div>
